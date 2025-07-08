@@ -4,14 +4,19 @@
 ---
 ### 사용 가능 언어
 > java, js, c/c++
+
 ### backend
 > spring, spring boot
+
 ### hibernate
 > jpa, query dsl, mybatis
+
 ### sql
 > mysql
+
 ### cloud
 > aws, docker
+
 ### front
 > html
 
