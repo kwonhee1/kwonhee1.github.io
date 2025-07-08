@@ -2,11 +2,11 @@
  
 ## 1. 기술 스택
 ---
-### backend
-spring, spring boot
-
-### hibernate
-jpa, query dsl, mybatis
+| Backend        | Hibernate      |
+| -------------- | -------------- |
+| Spring         | JPA            |
+| Spring Boot    | QueryDSL       |
+|                | MyBatis        |
 
 ### sql
 mysql
