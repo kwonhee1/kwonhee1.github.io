@@ -5,8 +5,8 @@
 | **Backend**    | **Hibernate**  | **Sql**        | **Cloud**      | **Front**      |
 | -------------- | -------------- | -------------- | -------------- | -------------- |  
 | Spring         | JPA            | mysql          | aws            | html           |
-| Spring Boot    | QueryDSL       |                | docker         | js             |
-|                | MyBatis        |                |                |                |
+| Spring Boot    | QueryDSL       | -              | docker         | js             |
+| -              | MyBatis        | -              | -              | -              |
 
 ## 2. 프로젝트 (포트 폴리오)
 ---
