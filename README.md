@@ -2,23 +2,20 @@
  
 ## 1. 기술 스택
 ---
-### 사용 가능 언어
-> java, js, c/c++
-
 ### backend
-> spring, spring boot
+spring, spring boot
 
 ### hibernate
-> jpa, query dsl, mybatis
+jpa, query dsl, mybatis
 
 ### sql
-> mysql
+mysql
 
 ### cloud
-> aws, docker
+aws, docker
 
 ### front
-> html
+html
 
 ## 2. 프로젝트 (포트 폴리오)
 ---
