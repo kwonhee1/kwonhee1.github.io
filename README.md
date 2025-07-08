@@ -1,12 +1,12 @@
 # 이권희 이력서
  
-## 1. 기술 스택
----
-| **Backend**    | **Hibernate**  | **Sql**        | **Cloud**      | **Front**      |
-| -------------- | -------------- | -------------- | -------------- | -------------- |  
-| Spring         | JPA            | mysql          | aws            | html           |
-| Spring Boot    | QueryDSL       | -              | docker         | js             |
-| -              | MyBatis        | -              | -              | -              |
+### 1. 기술 스택
+
+| **Backend**   | **Hibernate** | **SQL** | **Cloud** | **Front**     |
+|---------------|---------------|---------|-----------|---------------|
+| Spring        | JPA           | MySQL   | AWS       | HTML          |
+| Spring Boot   | QueryDSL      | -       | Docker    | JavaScript    |
+| -             | MyBatis       | -       | -         | -             |
 
 ## 2. 프로젝트 (포트 폴리오)
 ---
