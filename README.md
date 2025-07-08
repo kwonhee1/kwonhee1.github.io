@@ -2,8 +2,8 @@
  
 ## 1. 기술 스택
 ---
-| Backend        | Hibernate      | Sql            | Cloud          | Front          |
-| -------------- | -------------- | -------------- | -------------- | -------------- | 
+| **Backend**    | **Hibernate**  | **Sql**        | **Cloud**      | **Front**      |
+| -------------- | -------------- | -------------- | -------------- | -------------- |  
 | Spring         | JPA            | mysql          | aws            | html           |
 | Spring Boot    | QueryDSL       |                | docker         | js             |
 |                | MyBatis        |                |                |                |
