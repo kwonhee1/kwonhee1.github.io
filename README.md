@@ -18,7 +18,8 @@
 > 혁신적인 크라우드펀딩 플랫폼 With U  
 > 개발 기간 : 2025/04 ~ (진행 중)  
 > 역할 : backend 모든 부분  
->> aws 배포, login, toss 결제, img  
+>> aws 배포, login, toss 결제, img
+  
 > https://github.com/DMU-NextLevel
 
 ## 3. 학위
