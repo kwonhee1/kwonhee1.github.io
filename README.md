@@ -1,4 +1,4 @@
-# 이권희 이력서
+# 이권희 포트폴리오
  
 ### 1. 기술 스택
 
@@ -8,7 +8,10 @@
 | Spring Boot   | QueryDSL      | -       | Docker    | JavaScript    |
 | -             | MyBatis       | -       | -         | -             |
 
-## 2. 프로젝트 (포트 폴리오)
+### 2. 소개
+
+
+## 3. 프로젝트 (포트 폴리오)
 ### 1. 여운  
 > 질문 하나, 마음속에 남는 여운  
 > 개발 기간 : 2025/02 ~ 2025/05 (2달) / 2025/06(user test)  
@@ -33,8 +36,12 @@
   
 > https://github.com/DMU-NextLevel
 
-## 3. 학위
+## 4. 학위
 > 1. 동양미래 대학교 (3년)
 
-## 4. 자격증
+## 5. 자격증
 > 2. 프로그래머스 PCCE Lv.2
+
+### 6. Contact
+이메일 : lkh8033@gmail.com
+velog : https://velog.io/@lkh8033/series
