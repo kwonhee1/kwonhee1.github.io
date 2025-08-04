@@ -2,7 +2,7 @@
  
 ### 1. 기술 스택
 
-| **Backend**   | **Hibernate** | **SQL** | **Cloud** | **Front**     |
+| **Backend**   | **ORM**       | **SQL** | **Cloud** | **Front**     |
 |---------------|---------------|---------|-----------|---------------|
 | Spring        | JPA           | MySQL   | AWS       | HTML          |
 | Spring Boot   | QueryDSL      | -       | Docker    | JavaScript    |
