@@ -15,12 +15,12 @@
 
 ## 3. 프로젝트 (포트 폴리오)
 ### 1. 질문 하나, 마음속에 남는 여운  
-1. 소개 : (어떤 프로젝트인지 소개 하기 위한 소개)
-2. 개발 기간 : 2025/02 ~ 2025/05 (2달) / 2025/06(user test)
-3. 인원 : 기획자1, 디자이너1, backend2, front2
-4. 역할 : backend
+소개 : (어떤 프로젝트인지 소개 하기 위한 소개)
+개발 기간 : 2025/02 ~ 2025/05 (2달) / 2025/06(user test)
+인원 : 기획자1, 디자이너1, backend2, front2
+역할 : backend
   
-5. 구현한 주요 기능 : login, security, 게시판 댓글 추가 수정, 오늘의 질문, 실시간 알림 서비스  
+구현한 주요 기능 : login, security, 게시판 댓글 추가 수정, 오늘의 질문, 실시간 알림 서비스  
 > 1. login, security : google social login, security, jwt token 구현  
 > 2. 실시간 알림 서비스 구현 : 단방향 socket Server Sent Emitter socket을 사용한 실시간 알림 서비스 구현  
 > 3. 게시판 댓글 추가 수정  
