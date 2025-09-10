@@ -25,19 +25,17 @@
 > 2. 실시간 알림 서비스 구현 : 단방향 socket Server Sent Emitter socket을 사용한 실시간 알림 서비스 구현  
 > 3. 게시판 댓글 추가 수정  
 
-### 2. 펀딩 플랫폼 with U    
-> 소개 : 
-> 개발 기간 : 2025/04 ~ (진행 중)
-> 인원 : frontend3, backend1 
-> 역할 : backend 모든 부분 
+### 2. 펀딩 플랫폼 [with U](https://github.com/DMU-NextLevel)
+소개 : 
+개발 기간 : 2025/04 ~ (진행 중)
+인원 : frontend3, backend1 
+역할 : backend 모든 부분 
      
-> 구현한 주요 기능 : aws 배포, login, toss 결제, img  
->> aws 배포 : Git CI,CD / Docker 를 사용한 aws 배포  
->> login 기능 : email login, social login, security jwt 보안과 인증 기능 구현  
->> toss 결제 시스템 : toss 결제 api를 사용한 결제 시스템 구현 (test용 구현, 실제 결제X)  
->> img service : back 서버 내에 img 파일을 저장하고 nginx 서빙 (aop를 사용한 img file rollback 구현)   
-  
-> https://github.com/DMU-NextLevel
+구현한 주요 기능 : aws 배포, login, toss 결제, img  
+> 1. aws 배포 : Git CI,CD / Docker 를 사용한 aws 배포  
+> 2. login 기능 : email login, social login, security jwt 보안과 인증 기능 구현  
+> 3. toss 결제 시스템 : toss 결제 api를 사용한 결제 시스템 구현 (test용 구현, 실제 결제X)  
+> 4. img service : back 서버 내에 img 파일을 저장하고 nginx 서빙 (aop를 사용한 img file rollback 구현)   
 
 ## 4. 학위
 > 1. 동양미래 대학교 (3년)
