@@ -25,7 +25,7 @@
 > 2. 실시간 알림 서비스 구현 : 단방향 socket Server Sent Emitter socket을 사용한 실시간 알림 서비스 구현  
 > 3. 게시판 댓글 추가 수정
 
-
+<img width="666" height="471" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
 
 ### 2. 펀딩 플랫폼 [with U](https://github.com/DMU-NextLevel)
 소개 : 
