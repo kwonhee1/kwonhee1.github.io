@@ -49,4 +49,4 @@
 
 ### 6. Contact
 이메일 : lkh8033@gmail.com  
-velog : https://velog.io/@lkh8033/series
+[velog : https://velog.io/@lkh8033/series](https://velog.io/@lkh8033/series)
