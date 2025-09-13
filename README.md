@@ -41,12 +41,15 @@
 
 
 
-## 4. 학위
-> 1. 동양미래 대학교 (3년)
+## 4. 대외 활동 / 수상경력
+> 1. 2024/12 전국 창의코딩 경진대회 참여
 
 ## 5. 자격증
-> 2. 프로그래머스 PCCE Lv.4
+> 1. 프로그래머스 PCCE Lv.4
 
-### 6. Contact
+## 6. 학위
+> 1. 동양미래 대학교 (3년)
+
+### Contact
 이메일 : lkh8033@gmail.com  
 [velog : https://velog.io/@lkh8033/series](https://velog.io/@lkh8033/series)
