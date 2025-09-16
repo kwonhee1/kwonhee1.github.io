@@ -7,7 +7,7 @@
 |---------------|---------------|---------|-----------|---------------|
 | Spring        | JPA           | MySQL   | AWS       | HTML          |
 | Spring Boot   | QueryDSL      | -       | Docker    | JavaScript    |
-| -             | MyBatis       | -       | -         | -             |
+| -             | MyBatis       | -       | Raspberry | -             |
 
 ## 2. 소개
 현재에 살고 지금 내가 할 수 있는 최선을 다하자!  
