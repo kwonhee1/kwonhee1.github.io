@@ -44,7 +44,7 @@
 
 <p align="center">
  
- <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/94c8832d-c951-4e45-95ac-a8f271922bd3" />
+ <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/f553717e-77c6-4423-8680-556df1b72c2c" />
 </p>
 
 ## 4. 대외 활동 / 수상경력
