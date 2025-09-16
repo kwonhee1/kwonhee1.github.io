@@ -39,6 +39,8 @@
 > 3. toss 결제 시스템 : toss 결제 api를 사용한 결제 시스템 구현 (test용 구현, 실제 결제X)  
 > 4. img service : back 서버 내에 img 파일을 저장하고 nginx 서빙 (aop를 사용한 img file rollback 구현)
 
+<img width="990" height="682" alt="image" src="https://github.com/user-attachments/assets/f553717e-77c6-4423-8680-556df1b72c2c" />
+<img width="1348" height="891" alt="image" src="https://github.com/user-attachments/assets/94c8832d-c951-4e45-95ac-a8f271922bd3" />
 
 
 ## 4. 대외 활동 / 수상경력
