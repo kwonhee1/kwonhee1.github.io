@@ -25,7 +25,10 @@
 > 2. 실시간 알림 서비스 구현 : 단방향 socket Server Sent Emitter socket을 사용한 실시간 알림 서비스 구현  
 > 3. 게시판 댓글 추가 수정
 
-<img width="666" height="471" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
+<p align="center">
+ <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
+ <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/94c8832d-c951-4e45-95ac-a8f271922bd3" />
+</p>
 
 ### 2. 펀딩 플랫폼 [with U](https://github.com/DMU-NextLevel)
 소개 : 
@@ -40,7 +43,7 @@
 > 4. img service : back 서버 내에 img 파일을 저장하고 nginx 서빙 (aop를 사용한 img file rollback 구현)
 
 <p align="center">
- <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/f553717e-77c6-4423-8680-556df1b72c2c" />
+ 
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/94c8832d-c951-4e45-95ac-a8f271922bd3" />
 </p>
 
