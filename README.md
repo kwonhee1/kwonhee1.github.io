@@ -121,11 +121,13 @@
       </tr>
       <tr>
         <td>2. Aop를 사용한 Custom Transaction 구현</td>
-        <td>Aop를 사용해서 저장된 ImgPath를 저장하고 Exception발생시 img파일 rollback</td>
+        <td>Aop를 사용해서 저장된 Img들의 Path를 저장하고 Exception발생시 img파일 rollback</td>
       </tr>
     </table>
-    <p><b>최종 선택 : </b>2. Aop를 사용한 Custom Transaction 구현</p>
-    혼자만의 방식으로 구현해보고 싶었음
+    <p><b>최종 선택 : </b>2. Aop를 사용한 Custom Transaction 구현 <br>
+    @ImgTransaction <br>
+    Img관련 함수에서 img 저정 할 때 저장된 Path를 저장하고 Exception발생 시 Path의 img 파일들을 지움
+    </p>
   </td>
  </tr>
  <tr>
@@ -133,7 +135,16 @@
     <b>2. Service Layer 의존성 관리</b>
     <p><b>문제점 :</b> service layer가 다른 service를 의존하면서 발생한 Circular References</p>
     <table>
+     <tr>
+      <th>이전 방식</th>               <td>개선 방식</td>
+      <tr>domain별 한개의 service</tr> <tr>기능 별 service 분리</tr>
+      <tr>단일 service layer</tr>      <tr>service layer, module service layer 분리</tr>
+     </tr>
     </table>
+    <p> 기능 별 service 분리 <br>
+        service layer : module service layer의존 <br>
+        module service layer : repository의존
+    </p>
   </td>
  </tr>
 </table>
