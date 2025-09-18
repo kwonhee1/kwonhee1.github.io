@@ -35,7 +35,7 @@
   <tr>
     <td>
       <b>1. 비회원 로직</b>
-      <p>기획: 모든 비회원에게 각자 다른 오늘의 질문을 렌더링</p>
+      <p>기획: 모든 비회원에게 같은 오늘의 질문이 아닌 각자 다른 오늘의 질문을 렌더링해주세요!</p>
       <p>문제점: 모든 비회원을 server에서 관리해야 함</p>
       <table>
         <tr>
@@ -48,32 +48,34 @@
         </tr>
         <tr>
           <td>2. 기존 회원 통합</td>
-          <td>모든 비회원에게 token 발급, DB로 관리</td>
+          <td>모든 비회원에게 비회원 token을 발금해서 db를 통해 관리한다</td>
         </tr>
       </table>
       <p><b>최종 선택:</b> 기존 회원 통합 방식</p>
+      <p>비회원의 정보 또한 휘발성이 되어서는 안된다.</p>
+      <p>aws성능과 개발 기간을 고려했을 때 redis도입은 어렵다.</p>
     </td>
   </tr>
   <tr>
     <td>
       <b>2. 배포 환경에서의 socket 관리</b>
-      <p>기획: 실시간 알림 기능 구현</p>
-      <p>도입 기술: SSE Socket</p>
+      <p>기획: 실시간 알림 기능을 만들어 주세요!</p>
+      <p>도입 기술: SSE Socket (단방향 Server Sent Event Socket)</p>
       <table>
         <tr>
           <th>문제점</th>
           <th>해결 방안</th>
         </tr>
         <tr>
-          <td>네트워크 문제로 socket 끊김</td>
-          <td>Front에서 5초 후 재연결</td>
+          <td>네트워크 문제로 socket 끊어진 경</td>
+          <td>front에서 socket이 끊어진 경우 5초 후에 다시 연결하는 로직 구현</td>
         </tr>
         <tr>
-          <td>무수한 socket 요청 도착</td>
-          <td>Server의 남은 socket 반환</td>
+          <td>네트워크 문제로 쌓여진 무수한 socket 요청이 backend에 도착할 경우 server 의 부담</td>
+          <td>server의 socket이 남아 있는 경우 해당 socket을 다시 반환</td>
         </tr>
       </table>
-      <p><b>최종 해결:</b> 대부분의 네트워크 상황 대응 완료</p>
+      <p><b>최종 해결:</b>대부분의 네트워크 상황에 대비한 socket 기능 구현 완료</p>
     </td>
   </tr>
 </table>
