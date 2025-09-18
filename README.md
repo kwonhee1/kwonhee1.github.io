@@ -45,11 +45,13 @@ aws성능과 개발 기간을 고려했을 때 redis도입은 어렵다.
 ### 2. 배포 환경에서의 socket 관리
 기획 : 실시간 알림 기능을 만들어 주세요!  
 도입 기술 : SSE Socket (단방향 Server Sent Event Socket)  
-| ** 문제점 ** | ** 해결 방안 ** |
+| **문제점** | **해결 방안** |
 | --- | --- |
 | 네트워크 문제로 socket이 끊어진 경우 | front에서 socket이 끊어진 경우 5초 후에 다시 연결하는 로직 구현 |
-| 네트워크 문제로 쌓여진 무수한 socket 요청이 backend에 도착할 경우 server 의 부담 | server의 socket이 남아 있는 경우 해당 socket을 다시 반환|
-최종 : 대부분의 네트워크 상황에 대비한 socket 기능 구현 완료
+| 네트워크 문제로 쌓여진 무수한 socket 요청이 backend에 도착할 경우 server 의 부담 | server의 socket이 남아 있는 경우 해당 socket을 다시 반환 |
+
+최종 해결  
+대부분의 네트워크 상황에 대비한 socket 기능 구현 완료
 
 <p align="center">
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
