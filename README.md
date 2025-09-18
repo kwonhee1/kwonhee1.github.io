@@ -31,7 +31,6 @@
 
 ### 문제 해결  
 
-<div align="center">
   <div align="left" width="45%">
  
 #### 1. 비회원 로직
@@ -63,7 +62,6 @@
 대부분의 네트워크 상황에 대비한 socket 기능 구현 완료  
 
   </div>
-</div>
 
 <p align="center">
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
