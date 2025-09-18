@@ -117,7 +117,7 @@
       </tr>
       <tr>
         <td>1. Spring TransactionSynchronization</td>
-        <td>afterCommit, beforeCommit함수 사</td>
+        <td>afterCommit, beforeCommit함수 사용</td>
       </tr>
       <tr>
         <td>2. Aop를 사용한 Custom Transaction 구현</td>
@@ -136,9 +136,13 @@
     <p><b>문제점 :</b> service layer가 다른 service를 의존하면서 발생한 Circular References</p>
     <table>
      <tr>
-      <th>이전 방식</th>               <td>개선 방식</td>
-      <tr>domain별 한개의 service</tr> <tr>기능 별 service 분리</tr>
-      <tr>단일 service layer</tr>      <tr>service layer, module service layer 분리</tr>
+      <th>이전 방식</th>               <th>개선 방식</th>
+     </tr>
+     <tr>
+      <td>domain별 한개의 service</td> <td>기능 별 service 분리</td>
+     </tr>
+     <tr>
+      <td>단일 service layer</td>      <td>service layer, module service layer 분리</td>
      </tr>
     </table>
     <p> 기능 별 service 분리 <br>
