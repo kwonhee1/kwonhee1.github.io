@@ -44,7 +44,7 @@
        <th>해결 방법</th>
       </tr>
       <tr>
-        <td>1. Spring TransactionSynchronization</td>
+        <td>문제 1. Spring TransactionSynchronization</td>
         <td>afterCommit, beforeCommit함수 사용</td>
       </tr>
       <tr>
@@ -60,7 +60,7 @@
  </tr>
  <tr>
   <td>
-    <b>2. Service Layer 의존성 관리</b>
+    <b>문제 2. Service Layer 의존성 관리</b>
     <p><b>문제점 :</b> service layer가 다른 service를 의존하면서 발생한 Circular References</p>
     <table>
      <tr>
@@ -114,7 +114,7 @@
           <th>해결 방법</th>
         </tr>
         <tr>
-          <td>1. redis 도입</td>
+          <td>문제 1. redis 도입</td>
           <td>redis을 도입해서 비회원을 관리</td>
         </tr>
         <tr>
@@ -129,7 +129,7 @@
   </tr>
   <tr>
     <td>
-      <b>2. 배포 환경에서의 socket 관리</b>
+      <b>문제 2. 배포 환경에서의 socket 관리</b>
       <p>기획: 실시간 알림 기능을 만들어 주세요!<br>
       도입 기술: SSE Socket (단방향 Server Sent Event Socket)</p>
       <table>
