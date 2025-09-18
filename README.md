@@ -49,7 +49,7 @@
 > aws성능과 개발 기간을 고려했을 때 redis도입은 어렵다.
 
   </div>
-  <div align="left">
+  <div align="right">
  
 #### 2. 배포 환경에서의 socket 관리
 기획 : 실시간 알림 기능을 만들어 주세요!  
