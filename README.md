@@ -58,6 +58,7 @@
 최종 해결  
 대부분의 네트워크 상황에 대비한 socket 기능 구현 완료
   </div>
+</div>
 <p align="center">
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/b0a29f4d-407d-4a2e-9819-c994de8c48b8" />
