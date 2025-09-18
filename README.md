@@ -24,13 +24,8 @@
 | **구현한 주요 기능** | **구현 기술** |
 | --- | --- |
 | login, security | jwt token, spring security, google social login |
-| 실시간 알림 서비스 | SSE Socket |
-| 게시판 댓글 추가/수정 | -- |
-
-login, security, 게시판 댓글 추가 수정, 오늘의 질문, 실시간 알림 서비스  
-> 1. login, security : google social login, security, jwt token 구현  
-> 2. 실시간 알림 서비스 구현 : 단방향 socket Server Sent Emitter socket을 사용한 실시간 알림 서비스 구현  
-> 3. 게시판 댓글 추가 수정
+| 실시간 알림 서비스 | SSE Socket (Server Sent Event Socket) |
+| 게시판 댓글 추가/수정 | spring boot, jpa |
 
 ### 문제 해결  
 #### 1. 비회원 로직
