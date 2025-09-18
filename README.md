@@ -43,8 +43,8 @@
 > 4. img service : back 서버 내에 img 파일을 저장하고 nginx 서빙 (aop를 사용한 img file rollback 구현)
 
 <p align="center">
- 
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/f553717e-77c6-4423-8680-556df1b72c2c" />
+ <img width="839" height="444" alt="image" src="https://github.com/user-attachments/assets/468329a5-7216-440c-bbd5-8cabae476b33" />
 </p>
 
 ## 4. 대외 활동 / 수상경력
