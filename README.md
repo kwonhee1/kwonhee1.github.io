@@ -36,7 +36,7 @@
 <table>
  <tr>
   <td>
-    <b>1. img transaction</b>
+    <b>문제 1. img transaction</b>
     <p><b>문제점 :</b> db transaction에 img 파일이 rollback되지 않음</p>
     <table>
       <tr>
@@ -44,7 +44,7 @@
        <th>해결 방법</th>
       </tr>
       <tr>
-        <td>문제 1. Spring TransactionSynchronization</td>
+        <td>1. Spring TransactionSynchronization</td>
         <td>afterCommit, beforeCommit함수 사용</td>
       </tr>
       <tr>
@@ -105,7 +105,7 @@
 <table>
   <tr>
     <td>
-      <b>1. 비회원 로직</b>
+      <b>문제 1. 비회원 로직</b>
       <p>기획: 모든 비회원에게 같은 오늘의 질문이 아닌 각자 다른 오늘의 질문을 렌더링해주세요! <br>
       문제점: 모든 비회원을 server에서 관리해야 함</p>
       <table>
@@ -114,7 +114,7 @@
           <th>해결 방법</th>
         </tr>
         <tr>
-          <td>문제 1. redis 도입</td>
+          <td>1. redis 도입</td>
           <td>redis을 도입해서 비회원을 관리</td>
         </tr>
         <tr>
