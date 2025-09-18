@@ -145,9 +145,8 @@
       <td>단일 service layer</td>      <td>service layer, module service layer 분리</td>
      </tr>
     </table>
-    <p> 기능 별 service 분리 <br>
-        service layer : module service layer의존 <br>
-        module service layer : repository의존
+    <p><b>결론 :</b> 1. 기능 별 service 분리 <br>
+        2. service layer(module service layer의존)/module service layer(repository의존) 분리
     </p>
   </td>
  </tr>
