@@ -14,21 +14,21 @@
 지금 배울 수 있는 최대한을 배우고 현재 갈 수 있는 최고의 길을 가기 위해 노력하자!
 
 ## 3. 프로젝트 (포트 폴리오)
-## 1. 질문 하나, 마음속에 남는 [여운](https://github.com/Yeoun-project)  
+### 1. 질문 하나, 마음속에 남는 [여운](https://github.com/Yeoun-project)  
 소개 : 사용자 주도 자기성찰 Q&A 서비스  
 개발 기간 : 2025/02 ~ 2025/05 (2달) / 2025/06(user test)  
 인원 : 기획자1, 디자이너1, backend2, front2  
 역할 : backend  
   
-### 구현한 주요 기능  
+#### 구현한 주요 기능  
 | **구현한 주요 기능** | **구현 기술** |
 | --- | --- |
 | login, security | jwt token, spring security, google social login |
 | 실시간 알림 서비스 | SSE Socket (Server Sent Event Socket) |
 | 게시판 댓글 추가/수정 | spring boot, jpa |
 
-### 문제 해결  
-#### 1. 비회원 로직
+#### 문제 해결  
+##### 1. 비회원 로직
 기획 : 모든 비회원에게 같은 오늘의 질문이 아닌 각자 다른 오늘의 질문을 렌더링해주세요!  
 문제점 : 모든 비회원을 server에서 관리해야 한다  
 
@@ -42,7 +42,7 @@
 비회원의 정보 또한 휘발성이 되어서는 안된다.  
 aws성능과 개발 기간을 고려했을 때 redis도입은 어렵다.  
 
-### 2. 배포 환경에서의 socket 관리
+##### 2. 배포 환경에서의 socket 관리
 기획 : 실시간 알림 기능을 만들어 주세요!  
 도입 기술 : SSE Socket (단방향 Server Sent Event Socket)  
 | **문제점** | **해결 방안** |
