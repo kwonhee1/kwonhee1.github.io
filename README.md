@@ -29,7 +29,7 @@
 | 실시간 알림 서비스 | SSE Socket (Server Sent Event Socket) |
 | 게시판 댓글 추가/수정 | spring boot, jpa |
 
-### -- 문제 해결  
+#### -- 문제 해결  
 
 <table>
   <tr>
