@@ -33,7 +33,7 @@
 
 <table>
   <tr>
-    <td>
+    
       <b>비회원 로직</b>
       <table>
         <tr>
@@ -50,8 +50,7 @@
         </tr>
       </table>
       <p><b>최종 선택:</b> 기존 회원 통합 방식</p>
-    </td>
-    <td>
+
       <b>배포 환경에서의 socket 관리</b>
       <table>
         <tr>
@@ -68,7 +67,7 @@
         </tr>
       </table>
       <p><b>최종 해결:</b> 대부분의 네트워크 상황에 대비한 socket 기능 구현 완료</p>
-    </td>
+
   </tr>
 </table>
 
