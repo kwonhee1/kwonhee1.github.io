@@ -31,7 +31,7 @@
 
 ### 문제 해결  
 <div align="center">
-  <div width="45%">
+  <div align="left" width="45%">
 #### 1. 비회원 로직
 기획 : 모든 비회원에게 같은 오늘의 질문이 아닌 각자 다른 오늘의 질문을 렌더링해주세요!  
 발생한 문제점 : 모든 비회원을 server에서 관리해야 한다  
@@ -46,7 +46,7 @@
 > 비회원의 정보 또한 휘발성이 되어서는 안된다.  
 > aws성능과 개발 기간을 고려했을 때 redis도입은 어렵다.  
   </div>
-  <div width="45%">
+  <div align="left" width="45%">
 #### 2. 배포 환경에서의 socket 관리
 기획 : 실시간 알림 기능을 만들어 주세요!  
 도입 기술 : SSE Socket (단방향 Server Sent Event Socket)  
