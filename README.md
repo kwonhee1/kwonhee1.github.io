@@ -27,7 +27,7 @@
 
 <p align="center">
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
- <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/94c8832d-c951-4e45-95ac-a8f271922bd3" />
+ <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/b0a29f4d-407d-4a2e-9819-c994de8c48b8" />
 </p>
 
 ### 2. 펀딩 플랫폼 [with U](https://github.com/DMU-NextLevel)
