@@ -94,7 +94,7 @@
 | 인원 | frontend3, backend1 |
 | 역학 | backend |
      
--- 구현한 주요 기능
+#### -- 구현한 주요 기능
 | **구현한 주요 기능** | **구현 기술** |
 | --- | --- |
 | 배포 자동화 | Git CI,CD / Docker |
@@ -103,8 +103,40 @@
 | login 기능 | jwt token, spring security, OAuth2 |
 | 이외 기능 | -- |
 
--- 문제 해결
+#### -- 문제 해결
 
+<table>
+ <tr>
+  <td>
+    <b>1. img transaction</b>
+    <p><b>문제점 :</b> db transaction에 img 파일이 rollback되지 않음</p>
+    <table>
+      <tr>
+       <th>고민한 해결 방안</th>
+       <th>해결 방법</th>
+      </tr>
+      <tr>
+        <td>1. Spring TransactionSynchronization</td>
+        <td>afterCommit, beforeCommit함수 사</td>
+      </tr>
+      <tr>
+        <td>2. Aop를 사용한 Custom Transaction 구현</td>
+        <td>Aop를 사용해서 저장된 ImgPath를 저장하고 Exception발생시 img파일 rollback</td>
+      </tr>
+    </table>
+    <p><b>최종 선택 : </b>2. Aop를 사용한 Custom Transaction 구현</p>
+    혼자만의 방식으로 구현해보고 싶었음
+  </td>
+ </tr>
+ <tr>
+  <td>
+    <b>2. Service Layer 의존성 관리</b>
+    <p><b>문제점 :</b> service layer가 다른 service를 의존하면서 발생한 Circular References</p>
+    <table>
+    </table>
+  </td>
+ </tr>
+</table>
 
 <p align="center">
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/f553717e-77c6-4423-8680-556df1b72c2c" />
