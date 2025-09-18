@@ -59,8 +59,8 @@
   <tr>
     <td>
       <b>2. 배포 환경에서의 socket 관리</b>
-      <p>기획: 실시간 알림 기능을 만들어 주세요!</p>
-      <p>도입 기술: SSE Socket (단방향 Server Sent Event Socket)</p>
+      <p>기획: 실시간 알림 기능을 만들어 주세요!<br>
+      도입 기술: SSE Socket (단방향 Server Sent Event Socket)</p>
       <table>
         <tr>
           <th>문제점</th>
@@ -75,7 +75,7 @@
           <td>server의 socket이 남아 있는 경우 해당 socket을 다시 반환</td>
         </tr>
       </table>
-      <p><b>최종 해결:</b>대부분의 네트워크 상황에 대비한 socket 기능 구현 완료</p>
+      <p><b>최종 해결: </b>대부분의 네트워크 상황에 대비한 socket 기능 구현 완료</p>
     </td>
   </tr>
 </table>
