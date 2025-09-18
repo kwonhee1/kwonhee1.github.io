@@ -30,7 +30,7 @@
 | 게시판 댓글 추가/수정 | spring boot, jpa |
 
 ### 문제 해결  
-<p align="center">
+<div align="center">
   <div width="45%">
 #### 1. 비회원 로직
 기획 : 모든 비회원에게 같은 오늘의 질문이 아닌 각자 다른 오늘의 질문을 렌더링해주세요!  
@@ -58,7 +58,7 @@
 최종 해결  
 대부분의 네트워크 상황에 대비한 socket 기능 구현 완료
   </div>
-</p>
+</div>
 <p align="center">
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/b0a29f4d-407d-4a2e-9819-c994de8c48b8" />
