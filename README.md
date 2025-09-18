@@ -31,37 +31,47 @@
 
 ### 문제 해결  
 
-  <div align="left" width="45%">
- 
-#### 1. 비회원 로직
-기획 : 모든 비회원에게 같은 오늘의 질문이 아닌 각자 다른 오늘의 질문을 렌더링해주세요!  
-발생한 문제점 : 모든 비회원을 server에서 관리해야 한다  
+<table>
+  <tr>
+    <td>
+      <b>비회원 로직</b>
+      <table>
+        <tr>
+          <th>고민한 해결 방안</th>
+          <th>해결 방법</th>
+        </tr>
+        <tr>
+          <td>1. redis 도입</td>
+          <td>redis을 도입해서 비회원을 관리한다</td>
+        </tr>
+        <tr>
+          <td>2. 기존 회원 통합</td>
+          <td>모든 비회원에게 비회원 token을 발급해서 DB로 관리</td>
+        </tr>
+      </table>
+      <p><b>최종 선택:</b> 기존 회원 통합 방식</p>
+    </td>
+    <td>
+      <b>배포 환경에서의 socket 관리</b>
+      <table>
+        <tr>
+          <th>문제점</th>
+          <th>해결 방안</th>
+        </tr>
+        <tr>
+          <td>네트워크 문제로 socket이 끊어진 경우</td>
+          <td>front에서 socket 끊어지면 5초 후 재연결</td>
+        </tr>
+        <tr>
+          <td>무수한 socket 요청이 backend에 도착</td>
+          <td>server의 socket 남아있으면 반환</td>
+        </tr>
+      </table>
+      <p><b>최종 해결:</b> 대부분의 네트워크 상황에 대비한 socket 기능 구현 완료</p>
+    </td>
+  </tr>
+</table>
 
-|   **고민한 해경 방안**   | **해결 방법** |
-| -------------- | --- |
-| 1. redis 도입  | redis을 도입해서 비회원을 관리한다 |
-| 2. 기존 회원 통합 | 모든 비회원에게 비회원 token을 발금해서 db를 통해 관리한다 |
-
-#### 최종 선택한 해결방안과 선택 이유   
-> 2. 기존 회원 통합 방식  
-> 비회원의 정보 또한 휘발성이 되어서는 안된다.  
-> aws성능과 개발 기간을 고려했을 때 redis도입은 어렵다.
-
-  </div>
-  <div align="right" width="45%">
- 
-#### 2. 배포 환경에서의 socket 관리
-기획 : 실시간 알림 기능을 만들어 주세요!  
-도입 기술 : SSE Socket (단방향 Server Sent Event Socket)  
-| **문제점** | **해결 방안** |
-| --- | --- |
-| 네트워크 문제로 socket이 끊어진 경우 | front에서 socket이 끊어진 경우 5초 후에 다시 연결하는 로직 구현 |
-| 네트워크 문제로 쌓여진 무수한 socket 요청이 backend에 도착할 경우 server 의 부담 | server의 socket이 남아 있는 경우 해당 socket을 다시 반환 |
-
-최종 해결  
-대부분의 네트워크 상황에 대비한 socket 기능 구현 완료  
-
-  </div>
 
 <p align="center">
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/4e860990-5589-42cd-b435-afb99799bb76" />
