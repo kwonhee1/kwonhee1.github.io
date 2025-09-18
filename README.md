@@ -95,17 +95,13 @@
 | 역학 | backend |
      
 -- 구현한 주요 기능
-| **구현한 주요 기능** | ** 구현 기술** |
+| **구현한 주요 기능** | **구현 기술** |
 | --- | --- |
-| aws배포 | Git CI,CD / Docker 를 사용한 aws 배포 |
-| login 기능 | email login, social login, security jwt 보안과 인증 기능 구현 |
+| 배포 자동화 | Git CI,CD / Docker |
 | toss 결제 | toss 결제 api를 사용한 결제 시스템 구현 |
 | img service | 서버에 img저장, nginx 서빙 / img rollback 구현 |
-: aws 배포, login, toss 결제, img  
-> 1. aws 배포 : Git CI,CD / Docker 를 사용한 aws 배포  
-> 2. login 기능 : email login, social login, security jwt 보안과 인증 기능 구현  
-> 3. toss 결제 시스템 : toss 결제 api를 사용한 결제 시스템 구현 (test용 구현, 실제 결제X)  
-> 4. img service : back 서버 내에 img 파일을 저장하고 nginx 서빙 (aop를 사용한 img file rollback 구현)
+| login 기능 | jwt token, spring security, OAuth2 |
+| 이외 기능 | -- |
 
 -- 문제 해결
 
