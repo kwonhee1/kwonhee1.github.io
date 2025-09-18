@@ -22,14 +22,14 @@
 | **인원** | 기획자1, 디자이너1, backend2, front2 |
 | **역할** | backend |
   
-#### 구현한 주요 기능  
+#### -- 구현한 주요 기능  
 | **구현한 주요 기능** | **구현 기술** |
 | --- | --- |
 | login, security | jwt token, spring security, google social login |
 | 실시간 알림 서비스 | SSE Socket (Server Sent Event Socket) |
 | 게시판 댓글 추가/수정 | spring boot, jpa |
 
-### 문제 해결  
+### -- 문제 해결  
 
 <table>
   <tr>
