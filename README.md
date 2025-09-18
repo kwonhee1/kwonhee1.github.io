@@ -14,7 +14,78 @@
 지금 배울 수 있는 최대한을 배우고 현재 갈 수 있는 최고의 길을 가기 위해 노력하자!
 
 ## 3. 프로젝트 (포트 폴리오)
-### 1. 질문 하나, 마음속에 남는 [여운](https://github.com/Yeoun-project)  
+### 1. 펀딩 플랫폼 [with U](https://github.com/DMU-NextLevel)
+
+| **소개** | **펀딩 플렛폼**|
+| --- | --- |
+| 개발 기간 | 2025/04 ~ (진행 중) |
+| 인원 | frontend3, backend1 |
+| 역학 | backend |
+     
+#### -- 구현한 주요 기능
+| **구현한 주요 기능** | **구현 기술** |
+| --- | --- |
+| 배포 자동화 | Git CI,CD / Docker |
+| toss 결제 | toss 결제 api를 사용한 결제 시스템 구현 |
+| img service | 서버에 img저장, nginx 서빙 / img rollback 구현 |
+| login 기능 | jwt token, spring security, OAuth2 |
+| 이외 기능 | -- |
+
+#### -- 문제 해결
+
+<table>
+ <tr>
+  <td>
+    <b>1. img transaction</b>
+    <p><b>문제점 :</b> db transaction에 img 파일이 rollback되지 않음</p>
+    <table>
+      <tr>
+       <th>고민한 해결 방안</th>
+       <th>해결 방법</th>
+      </tr>
+      <tr>
+        <td>1. Spring TransactionSynchronization</td>
+        <td>afterCommit, beforeCommit함수 사용</td>
+      </tr>
+      <tr>
+        <td>2. Aop를 사용한 Custom Transaction 구현</td>
+        <td>Aop를 사용해서 저장된 Img들의 Path를 저장하고 Exception발생시 img파일 rollback</td>
+      </tr>
+    </table>
+    <p><b>최종 선택 : </b>2. Aop를 사용한 Custom Transaction 구현 <br>
+    @ImgTransaction <br>
+    Img관련 함수에서 img 저정 할 때 저장된 Path를 저장하고 Exception발생 시 Path의 img 파일들을 지움
+    </p>
+  </td>
+ </tr>
+ <tr>
+  <td>
+    <b>2. Service Layer 의존성 관리</b>
+    <p><b>문제점 :</b> service layer가 다른 service를 의존하면서 발생한 Circular References</p>
+    <table>
+     <tr>
+      <th>이전 방식</th>               <th>개선 방식</th>
+     </tr>
+     <tr>
+      <td>domain별 한개의 service</td> <td>기능 별 service 분리</td>
+     </tr>
+     <tr>
+      <td>단일 service layer</td>      <td>service layer, module service layer 분리</td>
+     </tr>
+    </table>
+    <p><b>결론</b><br> 1. 기능 별 service 분리 <br>
+        2. service layer(module service layer의존)/module service layer(repository의존) 분리
+    </p>
+  </td>
+ </tr>
+</table>
+
+<p align="center">
+ <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/f553717e-77c6-4423-8680-556df1b72c2c" />
+ <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/468329a5-7216-440c-bbd5-8cabae476b33" />
+</p>
+
+### 2. 질문 하나, 마음속에 남는 [여운](https://github.com/Yeoun-project)  
 
 | **소개** | 사용자 주도 자기성찰 Q&A 서비스 |
 | --- | --- |
@@ -86,76 +157,6 @@
  <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/b0a29f4d-407d-4a2e-9819-c994de8c48b8" />
 </p>
 
-### 2. 펀딩 플랫폼 [with U](https://github.com/DMU-NextLevel)
-
-| **소개** | **펀딩 플렛폼**|
-| --- | --- |
-| 개발 기간 | 2025/04 ~ (진행 중) |
-| 인원 | frontend3, backend1 |
-| 역학 | backend |
-     
-#### -- 구현한 주요 기능
-| **구현한 주요 기능** | **구현 기술** |
-| --- | --- |
-| 배포 자동화 | Git CI,CD / Docker |
-| toss 결제 | toss 결제 api를 사용한 결제 시스템 구현 |
-| img service | 서버에 img저장, nginx 서빙 / img rollback 구현 |
-| login 기능 | jwt token, spring security, OAuth2 |
-| 이외 기능 | -- |
-
-#### -- 문제 해결
-
-<table>
- <tr>
-  <td>
-    <b>1. img transaction</b>
-    <p><b>문제점 :</b> db transaction에 img 파일이 rollback되지 않음</p>
-    <table>
-      <tr>
-       <th>고민한 해결 방안</th>
-       <th>해결 방법</th>
-      </tr>
-      <tr>
-        <td>1. Spring TransactionSynchronization</td>
-        <td>afterCommit, beforeCommit함수 사용</td>
-      </tr>
-      <tr>
-        <td>2. Aop를 사용한 Custom Transaction 구현</td>
-        <td>Aop를 사용해서 저장된 Img들의 Path를 저장하고 Exception발생시 img파일 rollback</td>
-      </tr>
-    </table>
-    <p><b>최종 선택 : </b>2. Aop를 사용한 Custom Transaction 구현 <br>
-    @ImgTransaction <br>
-    Img관련 함수에서 img 저정 할 때 저장된 Path를 저장하고 Exception발생 시 Path의 img 파일들을 지움
-    </p>
-  </td>
- </tr>
- <tr>
-  <td>
-    <b>2. Service Layer 의존성 관리</b>
-    <p><b>문제점 :</b> service layer가 다른 service를 의존하면서 발생한 Circular References</p>
-    <table>
-     <tr>
-      <th>이전 방식</th>               <th>개선 방식</th>
-     </tr>
-     <tr>
-      <td>domain별 한개의 service</td> <td>기능 별 service 분리</td>
-     </tr>
-     <tr>
-      <td>단일 service layer</td>      <td>service layer, module service layer 분리</td>
-     </tr>
-    </table>
-    <p><b>결론</b><br> 1. 기능 별 service 분리 <br>
-        2. service layer(module service layer의존)/module service layer(repository의존) 분리
-    </p>
-  </td>
- </tr>
-</table>
-
-<p align="center">
- <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/f553717e-77c6-4423-8680-556df1b72c2c" />
- <img width="45%" height="500" alt="image" src="https://github.com/user-attachments/assets/468329a5-7216-440c-bbd5-8cabae476b33" />
-</p>
 
 ## 4. 대외 활동 / 수상경력
 > 1. 2024/12 전국 창의코딩 경진대회 참여
