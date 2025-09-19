@@ -26,6 +26,7 @@
 
     
 #### -- 구현한 주요 기능
+
 | **구현한 주요 기능** | **구현 방식** |
 | --- | --- |
 | 배포 자동화 | Git CI,CD / Docker |
@@ -97,6 +98,7 @@
 | **역할** | backend |
   
 #### -- 구현한 주요 기능  
+
 | **구현한 주요 기능** | **구현 기술** |
 | --- | --- |
 | login, security | jwt token, spring security, google social login |
