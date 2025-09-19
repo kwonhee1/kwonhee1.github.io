@@ -23,11 +23,11 @@
 | 역학 | backend |
      
 #### -- 구현한 주요 기능
-| **구현한 주요 기능** | **구현 기술** |
+| **구현한 주요 기능** | **구현 방식** |
 | --- | --- |
 | 배포 자동화 | Git CI,CD / Docker |
 | toss 결제 | toss 결제 api를 사용한 결제 시스템 구현 |
-| img service | 서버에 img저장, nginx 서빙 / img rollback 구현 |
+| img service | 서버에 img저장, nginx 서빙 / Aop img rollback 구현 |
 | login 기능 | jwt token, spring security, OAuth2 |
 | 이외 기능 | -- |
 
